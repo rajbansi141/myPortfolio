@@ -26,7 +26,7 @@ const Contact = () => {
 
     // Build the POST body as URL-encoded string (required by Netlify)
     const encodedBody = new URLSearchParams({
-      "form-name": "contact", // Must match the form name
+      "URLSearchParams": "contact", // Must match the form name
       ...formData,
     }).toString();
 
