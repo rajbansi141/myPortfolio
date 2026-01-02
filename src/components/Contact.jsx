@@ -24,15 +24,19 @@ const Contact = () => {
     e.preventDefault()
     setStatus('sending')
 
-    
+    // Build the POST body as URL-encoded string (required by Netlify)
+    const encodedBody = new URLSearchParams({
+      'contact': 'contact', // Must match the form name
+      ...formData
+    }).toString();
     
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify(formData),
+        body: encodedBody,
       })
       
       if (response.ok) {
@@ -133,7 +137,7 @@ const Contact = () => {
                   Send a Message
                 </h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-6" data-netlify="true">
+                <form name='contact' onSubmit={handleSubmit} className="space-y-6" data-netlify="true" netlify-honeypot="bot-field" >
                   <div>
                     <label
                       htmlFor="name"
