@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowUp } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaInstagram, FaArrowUp } from 'react-icons/fa'
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -74,6 +74,15 @@ const Footer = () => {
                 aria-label="Email"
               >
                 <FaEnvelope />
+              </a>
+              <a
+                href="https://instagram.com/rajbansi403/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-2xl hover:text-blue-400 transition-colors duration-300"
+                aria-label="LinkedIn"
+              >
+                <FaInstagram />
               </a>
             </div>
           </div>

@@ -127,10 +127,10 @@ const Projects = () => {
                 {/* Gradient Overlay on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
-                {/* Category Badge */}
+                {/* Category Badge
                 <div className="absolute top-4 left-4 px-3 py-1 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-full text-xs font-semibold text-gray-800 dark:text-gray-200 shadow-lg">
                   {project.category}
-                </div>
+                </div> */}
 
                 {/* Hover Icons */}
                 <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10">
@@ -207,7 +207,7 @@ const Projects = () => {
             className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:shadow-xl hover:shadow-blue-500/50 transition-all duration-300 transform hover:scale-105 group"
           >
             <FaGithub className="text-xl" />
-            <span>View more on GitHub</span>
+            <span>View More Projects</span>
             <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
           </a>
         </div>

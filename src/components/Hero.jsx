@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload, FaInstagram } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -84,6 +84,15 @@ const Hero = () => {
               aria-label="Email"
             >
               <FaEnvelope />
+            </a>
+            <a
+              href="https://instagram.com/rajbansi403/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-3xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-125 hover:rotate-12"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
             </a>
           </div>
         </div>

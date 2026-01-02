@@ -23,6 +23,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     setStatus('sending')
+
+    
     
     try {
       const response = await fetch('/api/contact', {
@@ -131,7 +133,7 @@ const Contact = () => {
                   Send a Message
                 </h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6" data-netlify="true">
                   <div>
                     <label
                       htmlFor="name"
