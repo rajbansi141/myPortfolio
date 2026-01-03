@@ -103,6 +103,18 @@ myPortfolio/
 4. Modify color scheme in `tailwind.config.js`
 5. Add your own projects in `Projects.jsx`
 
+## Netlify Forms (Contact form)
+
+- This project supports **Netlify Forms**. A hidden static form exists in `index.html` so Netlify can detect the form at build time, and the React `Contact` component includes `data-netlify="true"`, `data-netlify-honeypot="bot-field"`, and a hidden `form-name` input.
+- How to test:
+  1. Deploy the site to Netlify (connect the repo and let Netlify build it).
+  2. Submit the contact form on the deployed site.
+  3. Check **Site → Forms** in the Netlify dashboard to confirm the submission.
+  4. Configure **Notifications → Add Email** (or use Zapier/Make) to forward submissions to an email or other services.
+- Notes:
+  - Netlify only records submissions from builds deployed to Netlify, so ensure you test the deployed site.  
+  - The React form uses an AJAX POST to `/` with `form-name=contact`, which Netlify accepts.
+
 ## License
 
 This project is open source and available under the MIT License.

@@ -26,7 +26,7 @@ const Contact = () => {
 
     // Build the POST body as URL-encoded string (required by Netlify)
     const encodedBody = new URLSearchParams({
-      "URLSearchParams": "contact", // Must match the form name
+      "form-name": "contact", // Must match the form name
       ...formData,
     }).toString();
 
@@ -170,7 +170,7 @@ const Contact = () => {
                   className="space-y-6"
                   method="POST"
                   data-netlify="true"
-                  netlify-honeypot="bot-field"
+                  data-netlify-honeypot="bot-field"
                 >
                   <div>
                     {/* Honeypot field for spam protection (hidden from users) */}
