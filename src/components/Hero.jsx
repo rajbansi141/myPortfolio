@@ -13,7 +13,7 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur-lg opacity-50 dark:opacity-30 animate-pulse"></div>
               <img
-                src="/profile.jpg"
+                src="./src/Images/me7111.png"
                 alt="Govinda Kumar Rajbanshi"
                 className="relative w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-white dark:border-gray-800 shadow-2xl animate-float hover:scale-105 transition-transform duration-300"
                 onError={(e) => {
@@ -51,7 +51,7 @@ const Hero = () => {
               View My Work
             </a>
             <a
-              href="/resume.pdf"
+              href="./src/Resume/ResumeRajbanshi.pdf"
               download
               className="btn-secondary inline-flex items-center gap-2"
             >
@@ -70,7 +70,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rajbanshi-a0b018266/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-3xl text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 transform hover:scale-125 hover:rotate-12"
